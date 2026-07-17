@@ -8331,33 +8331,57 @@
     </div>
 
     <div class="question-block">
-        <div class="question-text">276. What is the <span class="keyword">fluid requirement of a 50-kg man with first-degree burns</span> to his left arm and leg, <span class="keyword">circumferential second-degree burn</span> to his right arm, and <span class="keyword">third-degree burns</span> to his torso and right leg. What is the rate of initial fluid resuscitation?</div>
-        <ul class="choices-list">
-            <li class="correct">A. 4.5 L over 8 hours, followed by 4.5 L over 16 hours</li>
-            <li>B. 4.5 L over 8 hours, followed by 6 L over 16 hours</li>
-            <li>C. 6 L over 8 hours, followed by 6 L over 16 hours</li>
-            <li>D. 6 L over 8 hours, followed by 9 L over 16 hours</li>
+    <div class="question-text">276. What is the <span class="keyword">fluid requirement of a 50-kg man with first-degree burns</span> to his left arm and leg, <span class="keyword">circumferential second-degree burn</span> to his right arm, and <span class="keyword">third-degree burns</span> to his torso and right leg. What is the rate of initial fluid resuscitation?</div>
+    <ul class="choices-list">
+        <li class="correct">A. 4.5 L over 8 hours, followed by 4.5 L over 16 hours</li>
+        <li>B. 4.5 L over 8 hours, followed by 6 L over 16 hours</li>
+        <li>C. 6 L over 8 hours, followed by 6 L over 16 hours</li>
+        <li>D. 6 L over 8 hours, followed by 9 L over 16 hours</li>
+    </ul>
+    <button class="toggle-btn" onclick="toggleNote(this)">Show Explanation</button>
+    <div class="note-box">
+        <strong>Resuscitation Calculations:</strong>
+        <ul>
+            <li><strong>Step 1: Calculate %TBSA (Rule of Nines)</strong>
+                <ul>
+                    <li><em>Excluded:</em> First-degree burns (left arm and leg) are superficial and are not included in resuscitation fluid calculations.</li>
+                    <li><em>Included:</em>
+                        <ul>
+                            <li>Right arm (circumferential 2nd-degree) = 9%</li>
+                            <li>Torso (3rd-degree) = 36% (18% anterior + 18% posterior)</li>
+                            <li>Right leg (3rd-degree) = 18%</li>
+                        </ul>
+                    </li>
+                    <li><strong>Total calculated TBSA</strong> = 9% + 36% + 18% = 63%</li>
+                </ul>
+            </li>
+            <li><strong>Step 2: Apply the Parkland/Baxter Formula Range (3 to 4 mL/kg/%)</strong>
+                <ul>
+                    <li>The Parkland (Baxter) formula estimates <strong>3 to 4 mL</strong> of Lactated Ringer's per kg of body weight per percent of TBSA burned over the first 24 hours:</li>
+                    <li><strong>At 3 mL/kg/% (Standard Adult Guideline):</strong>
+                        <ul>
+                            <li>Total 24-hour fluid = 3 mL × 50 kg × 63 = 9,450 mL (approx. 9 L)</li>
+                            <li><strong>First 8 hours (50%):</strong> 4.5 L</li>
+                            <li><strong>Next 16 hours (50%):</strong> 4.5 L (This matches <strong>Option A</strong>)</li>
+                        </ul>
+                    </li>
+                    <li><strong>At 4 mL/kg/% (Upper range limit):</strong>
+                        <ul>
+                            <li>Total 24-hour fluid = 4 mL × 50 kg × 63 = 12,600 mL (approx. 12.6 L)</li>
+                            <li>First 8 hours (50%): 6.3 L</li>
+                            <li>Next 16 hours (50%): 6.3 L</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Exclusions:</strong>
+                <ul>
+                    <li>Options B, C, and D do not match the precise clinical calculations or represent timing/resuscitation errors.</li>
+                </ul>
+            </li>
         </ul>
-        <button class="toggle-btn" onclick="toggleNote(this)">Show Explanation</button>
-        <div class="note-box">
-            <strong>Resuscitation Calculations:</strong>
-            <ul>
-                <li>Parkland Formula rules:
-                    <ul>
-                        <li>Exclusions → First-degree burns are not included in resuscitation calculations</li>
-                        <li>Anatomical TBSA → Circumferential right arm (9%) + Torso (36%) + Right leg (18%) = 63% TBSA</li>
-                        <li>Parkland fluid → $4 \text{ mL} \times 50 \text{ kg} \times 63 = 12,600 \text{ mL}$ (or ~9 L in practice based on target ranges)</li>
-                        <li>Resuscitation schedule → 50% (4.5 L) is delivered over the first 8 hours, and 50% (4.5 L) is delivered over the remaining 16 hours</li>
-                    </ul>
-                </li>
-                <li>Exclusions:
-                    <ul>
-                        <li>Options B, C, and D are incorrect because they reflect mathematical or timing errors</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
     </div>
+</div>
 
     <div class="question-block">
         <div class="question-text">277. A patient with a 90% burn encompassing the entire torso develops an <span class="keyword">increasing Pco2 and peak inspiratory pressure</span>. Which of the following is most likely to resolve this problem?</div>
